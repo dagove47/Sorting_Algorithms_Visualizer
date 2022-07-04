@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon - Contacts App -->
+    <link rel="icon" href="https://icon-library.com/images/amount-icon/amount-icon-9.jpg">
+    <!-- bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <!-- JS main -->
+    <script src="js/main.js" defer></script>
+    
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Sorting Algorithms Visualizer</h1>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <button class="resetBtn" id="resetBtn">RESET</button>
+                    <div class="sizeContainer">
+                        <label for="sizeInput">Size</label>
+                        <input type="range" id="sizeInput" min="3" max="40" step="1" value="10">
+                    </div>
+                    <div class="speedContainer">
+                        <label for="speedInput">Speed</label>
+                        <input type="range" id="speedInput" min="1" max="10" step="1" value="3">
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <button class="sortBtn" id="bubbleBtn">Bubble Sort</button>
+                    <button class="sortBtn" id="insertionBtn">Insertion Sort</button>
+                    <button class="sortBtn" id="selectionBtn">Selection Sort</button>
+                    <button class="sortBtn" id="mergeBtn">Merge Sort</button>
+                    <button class="sortBtn" id="quickBtn">Quick Sort</button>
+                </div>
+            </nav>
+        </header>
+        <div class="bars-Container" id="barsContainer"></div>
+        <footer class="footer">
+            <div>
+                <div class="footer-header">A work by <a href="https://www.linkedin.com/in/david-gomez-v/">David
+                        Gómez</a></div>
+                <div class="footer-links col">
+                    <a href="https://www.linkedin.com/in/david-gomez-v/"><em class="bi bi-linkedin"></em></a>
+                    <a href="https://github.com/dagove47"><em class="bi bi-github"></em></a>
+                    <a href="https://www.facebook.com/david.venegas.986/"><em class="bi bi-facebook"></em></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
