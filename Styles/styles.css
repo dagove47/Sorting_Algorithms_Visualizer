@@ -101,14 +101,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline;
     height: 60vh;
     width: 100%;
     margin: 0 0 16px 0;
 }
 
 .bars {
-    height: 60vh;
     background: #A904BF;
     width: 25px;
     border: 2px solid #141516;

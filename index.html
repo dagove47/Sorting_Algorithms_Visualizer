@@ -24,14 +24,14 @@
             <h1 class="title neon">Sorting Algorithms Visualizer</h1>
             <nav class="navbar">
                 <div class="nav-side d-flex">
-                    <button class="navBtn resetBtn" id="resetBtn">RESET</button>
+                    <button class="navBtn resetBtn" id="resetBtn" onclick="reset()">RESET</button>
                     <div class="inputContainer">
                         <label for="sizeInput">Size</label>
-                        <input type="range" id="sizeInput" min="3" max="40" step="1" value="10">
+                        <input type="range" id="sizeInput" min="3" max="40" step="1" value="10" onChange="reset()">
                     </div>
                     <div class="inputContainer">
                         <label for="speedInput">Speed</label>
-                        <input type="range" id="speedInput" min="1" max="10" step="1" value="3">
+                        <input type="range" id="speedInput" min="1" max="30" step="1" value="3">
                     </div>
                 </div>
                 <div class="nav-side">
@@ -43,48 +43,7 @@
                 </div>
             </nav>
         </header>
-        <div class="bars-Container" id="barsContainer">
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-            <div class="bars"></div>
-        </div>
+        <div class="bars-Container" id="barsContainer"></div>
         <footer class="footer">
             <div>
                 <div class="footer-header">A work by <a href="https://www.linkedin.com/in/david-gomez-v/">David
