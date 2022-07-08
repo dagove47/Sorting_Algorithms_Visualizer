@@ -14,7 +14,7 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="Styles/styles.css">
     <!-- JS main -->
-    <script src="js/main.js" defer></script>
+    <script type="module" src="js/main.js"></script>
     
     <title>Sorting Visualizer</title>
 </head>
@@ -24,10 +24,10 @@
             <h1 class="title neon">Sorting Algorithms Visualizer</h1>
             <nav class="navbar">
                 <div class="nav-side d-flex">
-                    <button class="navBtn resetBtn" id="resetBtn" onclick="reset()">RESET</button>
+                    <button class="navBtn resetBtn" id="resetBtn">RESET</button>
                     <div class="inputContainer">
                         <label for="sizeInput">Size</label>
-                        <input type="range" id="sizeInput" min="3" max="40" step="1" value="10" onChange="reset()">
+                        <input type="range" id="sizeInput" min="3" max="40" step="1" value="10">
                     </div>
                     <div class="inputContainer">
                         <label for="speedInput">Speed</label>
