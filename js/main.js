@@ -72,13 +72,13 @@ selectionBtn.addEventListener('click', () => {
     createBars();
 })
 
-mergeBtn.addEventListener('click', () => {
-    mergeSort(barsArray);
+quickBtn.addEventListener('click', () => {
+    quickSort(barsArray);
     createBars();
 })
 
-quickBtn.addEventListener('click', () => {
-    quickSort(barsArray);
+mergeBtn.addEventListener('click', () => {
+    mergeSort(barsArray);
     createBars();
 })
 
