@@ -1,4 +1,4 @@
-import { bubbleSort, insertionSort, selectionSort, mergeSort, quickSort } from './algorithms.js';
+import { bubbleSort, insertionSort, selectionSort, quickSort, mergeSort } from './algorithms.js';
 
 const sizeInput = document.getElementById("sizeInput");
 const speedInput = document.getElementById("speedInput");

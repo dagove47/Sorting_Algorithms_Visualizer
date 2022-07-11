@@ -35,11 +35,56 @@ function selectionSort(arr) {
 }
 
 function quickSort(arr) {
-    console.log('quickSort');
+    if (arr.length === 0) {
+        return [];
+    } else {
+        const pivotValue = arr[0];
+        let lesser = [];
+        let equal = [];
+        let greater = [];
+        for (let e of arr) {
+            if (e < pivotValue) {
+                lesser.push(e);
+            } else if (e > pivotValue) {
+                greater.push(e);
+            } else {
+                equal.push(e);
+            }
+        }
+        return [...quickSort(lesser), ...equal, ...quickSort(greater)];
+    }
+}
+
+function merge(firstArr, secondArr) {
+    const output = [];
+    let firstInd = 0;
+    let secondInd = 0;
+    while (firstInd < firstArr.length && secondInd < secondArr.length) {
+        const firstElem = firstArr[firstInd];
+        const secondElem = secondArr[secondInd];
+        if (firstElem < secondElem) {
+            output.push(firstElem);
+            firstInd++;
+        } else {
+            output.push(secondElem);
+            secondInd++;
+        }
+    }
+    return [...output, ...firstArr.slice(firstInd), ...secondArr.slice(secondInd)];
 }
 
 function mergeSort(arr) {
-    console.log('mergeSort');
+    if (arr.length <= 1) {
+        return arr;
+    }
+    const halfInd = Math.floor(arr.length / 2);
+    const firstHalf = arr.slice(0, halfInd);
+    const secondHalf = arr.slice(halfInd);
+    return merge(
+        mergeSort(firstHalf),
+        mergeSort(secondHalf)
+    );
 }
+
 
 export { bubbleSort, insertionSort, selectionSort, quickSort, mergeSort };
