@@ -27,7 +27,7 @@ function createBars() {
     for(let bar of barsArray) {
         let newBar = document.createElement("div");
         newBar.setAttribute("class", "bars");
-        newBar.style.height = bar + "vh";
+        newBar.style.height = `${bar}vh`;
         barsContainer.append(newBar);
     }
 }
@@ -73,12 +73,12 @@ selectionBtn.addEventListener('click', () => {
 })
 
 quickBtn.addEventListener('click', () => {
-    quickSort(barsArray);
+    barsArray = quickSort(barsArray);
     createBars();
 })
 
 mergeBtn.addEventListener('click', () => {
-    mergeSort(barsArray);
+    barsArray = mergeSort(barsArray);
     createBars();
 })
 
